@@ -100,12 +100,12 @@ yarn start
 
 ##Body
 {
-  // "userId":1,
-  // "createUserInput":{
-  //   "name": "Hello",
-  //   "username": "thatguy12",
-  //   "age": 21
-  // },
+   "userId":1,
+   "createUserInput":{
+     "name": "Hello",
+     "username": "thatguy12",
+     "age": 21
+  },
   "updateUserInput":{
     "id":1,
     "name":"Smiles",
