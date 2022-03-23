@@ -1,5 +1,11 @@
-Testing out GraphQL, Apollo, lodash.
+Testing out GraphQL, Apollo, lodash and yarn instead of npm(ish).
 Learning: Typedefs, resolvers, query, mutation, input
+
+``` Setup/Run
+yarn instal
+
+yarn start
+```
 
 
 
