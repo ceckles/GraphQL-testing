@@ -1,5 +1,5 @@
-Following tutorial on youtube:
-https://www.youtube.com/watch?v=yqWzCV0kU_c&t=2559s
+Testing out GraphQL, Apollo, lodash.
+Learning: Typedefs, resolvers, query, mutation, input
 
 
 
