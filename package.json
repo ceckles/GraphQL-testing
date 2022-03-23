@@ -1,0 +1,17 @@
+{
+  "name": "graphql-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "nodemon ./src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "apollo-server": "^3.6.5",
+    "graphql": "^16.3.0",
+    "lodash": "^4.17.21",
+    "nodemon": "^2.0.15"
+  }
+}
