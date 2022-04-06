@@ -64,12 +64,36 @@ const resolvers = {
             UserList[_.findIndex(UserList, {id: Number(updateUser.id)})] = user;
             return user;
         },
-        createMovie: (parent, args) =>{
-            const movie = "";
-            return movie;
+        //Delete User
+        deleteUser: (parent,args) =>{
+            //get id
+            const id = args.id;
+            _.remove(UserList, (user) => user.id === Number(id));
+            return null;
         },
+        //Create Movie
+        createMovie: (parent, args) =>{
+            //get new movies
+            const newMovie = args.input;
+            //get last ID of movie list
+            const lastID = MovieList[MovieList.length - 1].id +1 ;
+            newMovie.id = lastID;
+            //add to list
+            MovieList.push(newMovie);
+            //return movie
+            return newMovie;
+        },
+        //Update Movie
         updateMovie: (parent,args) =>{
-            const movie = "";
+            //Get new movie data
+            const updateMovie = args.input;
+            //Get old movie data
+            const movie = _.find(MovieList, { id: Number(updateMovie.id)});
+            //Validation checks and change data if dif
+            if(movie.name !== updateMovie.name){ movie.name = updateMovie.name}
+            if(movie.isInTheaters !== updateMovie.isInTheaters){ movie.isInTheaters = updateMovie.isInTheaters}
+            if(movie.yearOfPublication !== updateMovie.yearOfPublication){ movie.yearOfPublication = updateMovie.yearOfPublication}
+            //return movie
             return movie;
         }
     },

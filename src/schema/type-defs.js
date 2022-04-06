@@ -59,6 +59,7 @@ const typeDefs = gql `
 
         createUser(input: CreateUserInput!): User!
         updateUser(input: UpdateUserInput!): User!
+        deleteUser(id: ID!): User
 
         createMovie(input: CreateMovieInput!): Movie!
         updateMovie(input: UpdateMovieInput!): Movie!
